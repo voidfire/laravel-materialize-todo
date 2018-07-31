@@ -3,6 +3,7 @@ services:
 
   # The Application
   app:
+    user: "${UID}:${GID}"
     build:
       context: ./
       dockerfile: app.dockerfile
